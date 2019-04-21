@@ -1,5 +1,15 @@
 // este arquivo possui todas as anotações relevantes durante o aprendizado da linguagem, para servir de referencia pessoal
-POINTERS
+
+POINTERS (PONTEIROS)
+===========================================
+#include<stdio.h>
+
+void ponteiro_duplo(int **x);
+
+void ponteiro_duplo(int **x){
+    
+    printf("%d\n",**x);
+}
 ==========================================
 #include <stdio.h>
 #include "funcao_template.h"
@@ -13,6 +23,23 @@ int main()
     
     printf("%x\n",b);// %x exibe um numero hexadecimal
     printf("%p\n",b);//%p exibe um endereco de memoria
+    return 0;
+}
+========================================================
+#include <stdio.h>
+#include "funcao_template.h"
+
+int main()
+{
+    int a,*b;
+    
+    a = 5;
+    b = &a;
+    
+    printf("%p\n",&a);//devolve o valor do endereço da variavel a
+    
+    ponteiro_duplo(&b);//devolve o conteudo da variavel a
+    
     return 0;
 }
 ========================================================
