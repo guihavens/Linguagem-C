@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+
+/********************************LISTAS(TAD)***********************************/
+typedef struct lista{
+    int num;
+    struct lista *prox;
+}lista;
+/********************************ponteiros*************************************/
+void insere_lista(int x,lista **y);
+
+void insere_lista(int x,lista **y){
+    
+    lista *l = malloc(sizeof(lista));
+    l->num = x;
+    l->prox = *y;
+    
+    
+    printf("%d\n",l->num);
+    
+}
