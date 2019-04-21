@@ -1,2 +1,18 @@
 // este arquivo possui todas as anotações relevantes durante o aprendizado da linguagem, para servir de referencia pessoal
+POINTERS
+==========================================
+#include <stdio.h>
+#include "funcao_template.h"
 
+int main()
+{
+    int a,*b;
+    
+    a = 5;
+    b = &a;
+    
+    printf("%x\n",b);// %x exibe um numero hexadecimal
+    printf("%p\n",b);//%p exibe um endereco de memoria
+    return 0;
+}
+========================================================
